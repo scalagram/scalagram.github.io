@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - Bio Page (Review)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/js/uswds-init.min.js" integrity="sha512-Zy/dqU71uCdMWS6VdSqc/+2RjOxbq/ySinrQyLG3wTVWSXtBQpK6/b2Ky6vT2JHuFsNm8yBZMJ8zeMQ/ji2qMA==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/css/uswds.min.css" integrity="sha512-jTdlH2LXTQ/nSPgY0SoocLYibqnSu0B7/DM2cmA3jPrw89dbtZKeytKXDJPYlZpjkHfHUlTe/4MTGovdM73AJw==" crossorigin="anonymous" />
+<base href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/">
+  
+  <link rel='stylesheet' href='https://codepen.io/pglevy/pen/WNRKxKP.css'>
+<link rel='stylesheet' href='https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.9.0/dist/css/uswds.min.css'>
+  
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <!--Basic Header -->
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Official websites use .gov
+              </strong>
+              <br />
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS
+              </strong>
+              <br />
+              A <strong>lock</strong> (
+              <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description" focusable="false">
+                  <title id="banner-lock-title">Lock</title>
+                  <desc id="banner-lock-description">A locked padlock</desc>
+                  <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                </svg></span>
+              ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="basic-logo">
+        <em class="usa-logo__text"><a href="javascript:void(0);" title="Home" aria-label="Home">Agency.gov</a></em>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/usa-icons/close.svg" role="img" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-one"><span>Topics</span></button>
+          <ul id="extended-nav-section-one" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Benefits</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Grants and loans</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Financial aid for students</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Unemployment help</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Military programs and benefits</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-two"><span>Agency</span></button>
+          <ul id="extended-nav-section-two" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">About us</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Initiatives</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Divisions</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Careers</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Offices</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-three"><span>Media</span></button>
+          <ul id="extended-nav-section-three" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Blog</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Social</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Press releases</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="usa-search usa-search--small" role="search">
+        <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
+        <input class="usa-input" id="basic-search-field-small" type="search" name="search">
+        <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+      </form>
+    </nav>
+  </div>
+</header>
+
+<!-- hero image and bio title -->
+<main>
+<!-- probabaly don't need id on section here -->
+  <section id="test-section-id" class="usa-section" style="background-image:url(https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/bio.jpg)">
+    <div class="grid-container">
+      <h1 class="font-heading-3xl text-base-lightest"> Director of BOEM Amanda Lefton</h1>
+    </div>
+  </section>
+
+<!-- I think I know the issue with the breadcrumb separators on Chrome, but it will take some more work to fix. -->
+
+<!-- For the hrefs here, let's use "javascript:void(0)" instead of the # because clicking that causes the scroll position to jump. -->
+  <!-- Bread Crumbs -->
+  <section>
+    <div class="grid-container">
+      <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+        <ol class="usa-breadcrumb__list">
+          <li class="usa-breadcrumb__list-item">
+            <a href="#" class="usa-breadcrumb__link">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="usa-breadcrumb__list-item">
+            <a href="#" class="usa-breadcrumb__link">
+              <span>About BOEM</span>
+            </a>
+          </li>
+          <li class="usa-breadcrumb__list-item">
+            <a href="#" class="usa-breadcrumb__link">
+              <span>Leadership</span>
+            </a>
+          </li>
+          <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+            <span>Biography</span>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  
+<!-- Biography Content -->
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-5 margin-bottom-4">
+<!-- The class "boem-leader-img" doesn't seem to be in use, so let's remove that. -->
+<!-- Can you move this image to the rrt-content repo? -->
+        <img class="boem-leader-img" src="https://www.boem.gov/sites/default/files/styles/leadership/public/2021-03/LeftonAmanda_copyright-NY.jpg?itok=9LylxJ2G" alt="Headshot photo of Amanda Lefton with the American flag in the background">
+      </div>
+<!-- I am intentionally bumping up the overall font size, so let's avoid resizing regular body copy. We can discuss further, but let's leave "font-body-sm" out for now. --->
+      <div class="tablet:grid-col-7 font-body-sm">
+        <p class="margin-top-0">Prior to serving as the Director for BOEM, Amanda Lefton most recently served as the First Assistant Secretary for Energy and Environment for the Governor of New York where she led the State’s climate and environmental initiatives and managed a portfolio of twelve agencies and authorities. In this role she championed and advanced implementation of landmark nation leading climate and renewable energy strategies. Previously, Amanda was the Deputy Policy Director for The Nature Conservancy in New York, worked in the labor movement for the Rochester Regional Joint Board of Workers United, and for the New York State Assembly. She also worked for the State Senate.</p>
+        <p>Originally from Queens, NY, Ms. Lefton grew up on Long Island, NY, and holds a Bachelor of Arts from the University at Albany.</p>
+<!-- Couple things here: Avoid using divs just to add spacing. You can put utility classes directly on the element, in this case, the button. Also, try not to mix padding and margin. You can probably use a single "margin-y-?" (which gives you and bottom spacing), instead of a mix of multiple classes. (Think of margin as the space between items and padding as the space between an item and its container.) Same notes apply to all the contact elements below. And check that spacing is consistent for the contact info. -->
+        <div class="margin-bottom-4 padding-bottom-2 padding-top-2">
+          <button class="usa-button">Connect on Linkedin</button>
+        </div>
+        <div class="margin-bottom-4 padding-bottom-2">
+          <p class="font-body-sm text-bold">Email: <br><a class="text-normal" href="/cdn-cgi/l/email-protection#e4858687a4819c8589948881ca878b89"><span class="__cf_email__" data-cfemail="a3e2cec2cdc7c28defc6c5d7cccde3c1ccc6ce8dc4ccd5">[email&#160;protected]</span></a></p>      
+        </div>
+        <div class="margin-bottom-4">
+          <p class="font-body-sm text-bold line-height-sans-2">Phone:</p>
+          <p class="font-body-sm text-normal padding-bottom-2">202-208-6474</p>
+        </div>
+        <div class="margin-bottom-4">
+          <p class="font-body-sm text-bold">Office:</p>
+          <p class="font-body-sm text-normal padding-bottom-8 ">Office of Public Affairs<br>
+            1849 C Street, NW<br>
+            Washington, D.C. 20240</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer + Identifier -->
+<footer class="usa-footer">
+    <div class="grid-container usa-footer__return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section">
+      <nav class="usa-footer__nav" aria-label="Footer navigation">
+        <ul class="grid-row grid-gap">
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Home</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Topics</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Agency</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Media</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div class="mobile-lg:grid-col-auto">
+              <img class="usa-footer__logo-img" src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/Logo_USAGov.png" alt="USA.gov logo">
+            </div>
+            <div class="mobile-lg:grid-col-auto">
+              <p class="usa-footer__logo-heading">Agency.gov</p>
+            </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                <a class="usa-social-link usa-social-link--facebook" href="javascript:void(0);">
+                  <span>Facebook</span>
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link usa-social-link--twitter" href="javascript:void(0);">
+                  <span>Twitter</span>
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link usa-social-link--youtube" href="javascript:void(0);">
+                  <span>YouTube</span>
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link usa-social-link--instagram" href="javascript:void(0);">
+                  <span>Instagram</span>
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link usa-social-link--rss" href="javascript:void(0);">
+                  <span>RSS</span>
+                </a>
+              </div>
+            </div>
+            <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
+            <address class="usa-footer__address">
+              <div class="usa-footer__contact-info grid-row grid-gap">
+                <div class="grid-col-auto">
+                  <a href="tel:1-800-555-5555">(800) CALL-GOVT</a>
+                </div>
+                <div class="grid-col-auto">
+                  <a href="/cdn-cgi/l/email-protection#670e0901082706000209041e49000811"><span class="__cf_email__" data-cfemail="523b3c343d123335373c312b7c353d24">[email&#160;protected]</span></a>
+                </div>
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Translate</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="usa-identifier">
+    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="javascript:void(0);" class="usa-identifier__logo">
+            <img class="usa-identifier__logo-img" src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/Logo_USAGov.png" alt="USA.gov logo" role="img">
+          </a>
+        </div>
+        <div class="usa-identifier__identity" aria-label="Agency description">
+          <p class="usa-identifier__identity-domain">agency.gov</p>
+          <p class="usa-identifier__identity-disclaimer">An official website of the <a href="javascript:void(0);">Agency</a></p>
+        </div>
+      </div>
+    </section>
+    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link">About Agency.gov</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link">Accessibility support</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">FOIA requests</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Performance reports</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
+        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+      </div>
+    </section>
+  </div>
+  
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/js/uswds.min.js'></script>
+  
+  
+
+</body>
+
+</html>
+ 
